@@ -1,0 +1,19 @@
+.TaskTitle{
+   margin-left: 90px;
+   text-align: center;
+}
+
+button{
+    font-weight: bold;
+}
+
+input{
+    width: 300px;
+}
+
+@media(max-width:800px){
+    .TaskTitle {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+}

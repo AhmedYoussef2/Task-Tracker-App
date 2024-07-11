@@ -1,0 +1,38 @@
+.Task{
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Input{
+    width: 350px;
+}
+
+.IsEditInputDiv{
+    display: none;
+}
+
+@media(max-width:800px){
+
+    .IsEditInput {
+        display: none;
+    }
+
+    .IsEditInputDiv{
+        display: block;
+        margin-bottom:20px ;
+    }
+
+    .Input{
+      display: none;
+    }
+
+    .form-checkbox{
+        margin-left: 35px;
+    }
+}

@@ -1,0 +1,10 @@
+.TaskList{
+    margin-top:120px;
+    
+}
+
+@media(max-width:800px){
+    .TaskList {
+        margin-top: 50px;
+    }
+}

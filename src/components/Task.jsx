@@ -22,7 +22,7 @@ const Task = ({ task, updateTask, deleteTask, toggleComplete }) => {
                 </div>
                 <div className='flex space-x-4 items-center'>
                     <input type="checkbox" className="form-checkbox h-5 w-5" checked={task.complete} onChange={() => toggleComplete(task.id)} />
-                    {isEditing ? (<input className='IsEditInput border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500' type="text" value={editText} onChange={handleEditChange} />) : (<p className={task.complete ? 'line-through Input ' : 'Input'}>{task.text}</p>)}
+                    {isEditing ? (<input className='IsEditInput border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-center' type="text" value={editText} onChange={handleEditChange} />) : (<p className={task.complete ? 'line-through Input ' : 'Input'}>{task.text}</p>)}
                     {isEditing ? (<button className='border-2 border-blue-500 text-blue-500 px-4 py-2 rounded-2xl hover:bg-blue-500 hover:text-white' onClick={handleEditSave}>Save</button>) : (<button className='border-2 border-green-500 text-green-500 px-4 py-2 rounded-2xl hover:bg-green-500 hover:text-white' onClick={() => setIsEditing(true)}>Update</button>)}
                     <button className='border-2 border-red-500 text-red-500 px-4 py-2 rounded-2xl hover:bg-red-500 hover:text-white' onClick={() => deleteTask(task.id)}> Delete </button>
                 </div>
